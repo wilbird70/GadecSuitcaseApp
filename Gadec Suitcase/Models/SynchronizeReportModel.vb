@@ -42,7 +42,7 @@ Public Class SynchronizeReportModel
     ''' <param name="actionSize"></param>
     ''' <param name="sourceTime"></param>
     ''' <param name="targetTime"></param>
-    Public Sub New(actionSize As Long, sourceTime As String, targetTime As String)
+    Public Sub New(actionSize As Long, sourceTime As Date, targetTime As Date)
         _ActionSize = actionSize
         _SourceTime = sourceTime
         _TargetTime = targetTime
