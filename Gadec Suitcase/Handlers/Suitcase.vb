@@ -236,8 +236,12 @@ Public Class Suitcase
             Dim folders = IO.Directory.GetDirectories(path, "*", IO.SearchOption.AllDirectories)
             Parallel.ForEach(folders, Sub(folder)
                                           If IO.Directory.GetFileSystemEntries(folder).Count = 0 Then
-                                              IO.Directory.Delete(folder)
-                                              deletedFolders += 1
+                                              Try
+                                                  IO.Directory.Delete(folder)
+                                                  deletedFolders += 1
+                                              Catch ex As Exception
+                                                  'Do nothing.
+                                              End Try
                                           End If
                                       End Sub)
         Loop While deletedFolders > 0

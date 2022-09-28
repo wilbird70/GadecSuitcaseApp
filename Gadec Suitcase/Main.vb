@@ -240,6 +240,11 @@ Public Class Main
                 _suitcaseFocus = False
             End If
 
+            If e.KeyCode = Keys.Right Then
+                SummaryTextBox_Click(Nothing, Nothing)
+                e.SuppressKeyPress = True
+            End If
+
         Catch ex As Exception
             GadecException(ex)
         End Try

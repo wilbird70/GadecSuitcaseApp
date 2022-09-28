@@ -30,7 +30,7 @@ Public Class ListboxDialog
         If IsNothing(selectedItems) Then selectedItems = {}
 
         Me.Text = Registerizer.GetApplicationVersion()
-        Me.Controls.ToList.ForEach(Sub(c) If c.Name.StartsWith("lt") Then c.Text = c.Name.Translate)
+        Translator.TranslateControles(Me)
 
         TextLabel.Text = prompt
         InputListBox.Items.AddRange(items.ToArray)

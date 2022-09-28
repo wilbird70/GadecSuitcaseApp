@@ -16,7 +16,10 @@ Public Class ProgressDialog
         ' This call is required by the designer.
         InitializeComponent()
         ' Add any initialization after the InitializeComponent() call.
+
         Me.Text = Registerizer.GetApplicationVersion()
+        Translator.TranslateControles(Me)
+
         OutputProgressBar.Minimum = 0
         OutputProgressBar.Maximum = 100
         OutputProgressBar.Value = 0

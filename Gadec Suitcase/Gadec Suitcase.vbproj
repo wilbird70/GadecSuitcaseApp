@@ -53,8 +53,8 @@
     <ApplicationIcon>Resources\Gadec Suitcase.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GadecCommonLibrary, Version=2.0.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\GadecCommonLibrary.2.0.2\lib\net48\GadecCommonLibrary.dll</HintPath>
+    <Reference Include="GadecCommonLibrary, Version=2.0.2.94, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\GadecCommonLibrary.2.0.2.94\lib\net48\GadecCommonLibrary.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="System" />
